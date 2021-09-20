@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>footboller</title>
+    <style>
+      * {
+        padding: 20;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      }
+      .head {
+        font-size: x-large;
+        height: 70px;
+        width: 100%;
+        background: rgb(10, 182, 235);
+        display: flex;
+      }
+      h1 {
+        position: fixed;
+        text-align: center;
+        color: red;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        text-transform: capitalize;
+        margin-left: 520px;
+      }
+      h3 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        position: absolute;
+        top: 90px;
+        margin-left: 599px;
+        text-transform: capitalize;
+      }
+      input {
+        display: block;
+        transition: 1s;
+        margin: 9px;
+        /* margin-left: 600px; */
+        margin-top: 21px;
+        width: 230px;
+        height: 40px;
+      }
+      .all {
+        margin-left: 600px;
+        margin-top: 67px;
+      }
+      .aa {
+        background-color: orangered;
+        height: 30px;
+        width: 100%;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head"><h1>footballer team</h1></div>
+    <div class="aa"><h3>Fill The Survey</h3></div>
+    <div class="all">
+        <h3 id="err"></h3>
+      <legend>Enter Name</legend>
+      <input type="text" name="name" id="name" />
+      <legend>Enter Email</legend>
+      <input type="email" name="email" id="email" />
+      <legend>Enter password</legend>
+      <input type="password" name="pass" id="pass" />
+      <legend>Enter Team</legend>
+      <input type="text" name="team" id="team" />
+    </div>
+    <button class="btn">register name</button>
+    <div class="show"><h4 id="c"></h4></div>
+    <script>
+      document.querySelector(".btn").addEventListener('click', function(){
+
+          const name = document.getElementById("name").nodeValue;
+          const email = document.getElementById("email").nodeValue;
+          const pass = document.getElementById("pass").value;
+          const team = document.getElementById("team").value;
+    
+                  const cc = document.querySelector("#c").innerHTML = name +  "Your Sucssesfully Selected";
+                  console.log("Succ");
+          
+
+      })
+    </script>
+  </body>
+</html>
