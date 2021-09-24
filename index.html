@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/lassi_png.png" />
+    <title>KA USTUBH</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      main {
+        width: 1360px;
+        height: 800px;
+        border: 2px solid black;
+        display: grid;
+        grid-template-columns: repeat(6, 270px) 200px;
+        grid-template-rows: repeat(5, 150px) 200px;
+        grid-gap: 12px;
+      }
+      .e1 {
+        grid-row: 1/2;
+        grid-column: 1/6;
+        background-color: darkslategrey;
+      }
+      .e2 {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        background-color: teal;
+      }
+      .e3 {
+        background-color: darkturquoise;
+        grid-column: 2/3;
+        grid-row: 2/3;
+      }
+      .e4 {
+        background-color: dodgerblue;
+        grid-column: 3/4;
+        grid-row: 2/3;
+      }
+      .e5 {
+        grid-column: 5/6;
+        grid-row: 2/6;
+        background-color: grey;
+      }
+      .e6 {
+        background-color: slateblue;
+        grid-column: 4/5;
+        grid-row: 2/3;
+      }
+      .e7 {
+        background-color: chartreuse;
+        grid-column: 2/5;
+        grid-row: 3/4;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="e1">Header</div>
+      <div class="e2">2</div>
+      <div class="e3">3</div>
+      <div class="e4">4</div>
+      <div class="e5">5</div>
+      <div class="e6">6</div>
+      <div class="e7">7</div>
+    </main>
+  </body>
+</html>
